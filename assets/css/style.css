@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+/* Navbar */
+.nav-item:hover,
+.search-icon:hover {
+  background-color: #d4cece !important;
+}
+
+.navbar-collapse.show {
+  background-color: #fff !important;
+}
+
+.navbar-ani {
+  position: fixed !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  animation: navani 0.3s linear 1;
+}
+
+@keyframes navani {
+  from {
+    top: -56px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+/* ------------------------------ Hero Section ------------------------------ */
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  background: url("../images/banner/parallax1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.75;
+}
+
+/* ---------------------------- Portfoli Section ---------------------------- */
+.portfolio {
+  min-height: 400px;
+  height: 400px;
+  background: url("../images/banner/parallax2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.75;
+}
+
+.gallery-img {
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  opacity: 0.75;
+}
+
+.load-btn:hover {
+  opacity: 1 !important;
+}
+
+/* ----------------------------- contact Section ---------------------------- */
+.contact {
+  min-height: 400px;
+  height: 400px;
+  background: url("../images/banner/parallax3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.75;
+}
+
+.send-btn:hover {
+  background-color: #616161 !important;
+}
+
+/* ----------------------------- Footer Section ----------------------------- */
+footer:hover {
+  background-color: #000 !important;
+  opacity: 1 !important;
+}
+
+footer a {
+  cursor: pointer;
+}
+
+footer a:hover {
+  opacity: 0.75;
+}
+/* -------------------------------------------------------------------------- */
+/*                                  Utilites                                  */
+/* -------------------------------------------------------------------------- */
+.letter-spacing-1 {
+  letter-spacing: 10px;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.bg-gray {
+  background-color: #616161;
+}
+
+.nowwrap {
+  white-space: nowrap;
+}
+
+.py-12px {
+  padding-block: 12px;
+}
+
+.py-64px {
+  padding-block: 64px;
+}
+
+.fs-24px {
+  font-size: 24px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+/* -------------------------------------------------------------------------- */
+/*                                Media queries                                */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  #hero {
+    min-height: 400px;
+    height: 400px;
+    background-attachment: scroll;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .w-md-75 {
+    width: 100% !important;
+  }
+}
